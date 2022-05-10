@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./components/Menu";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -10,12 +11,15 @@ function App() {
         <h2 className="title">Categorias</h2>
         <p className="subtitle">Elige nuestras deliciosas pizzas </p>
         <div className="tabs">
-          <ul>
-            <li>Pizzas</li>
-            <li>Empanadas</li>
-            <li>Bebidas</li>
-            <li>Postres</li>
-          </ul>
+          <div className="tabs__item tabs__item-active">Pizzas</div>
+          <div className="tabs__item">Empanadas </div>
+          <div className="tabs__item">Bebidas</div>
+          <div className="tabs__item">Postres</div>
+        </div>
+        <div className="items">
+          <Cart />
+          <Cart />
+          <Cart />
         </div>
       </div>
     </div>
